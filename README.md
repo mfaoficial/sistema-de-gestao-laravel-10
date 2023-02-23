@@ -1,15 +1,10 @@
 # Sistema de Gestão - Laravel 10
 
-## Projeto desenvolvido pela Agência Brasil Digital
-
-![Badge](https://img.shields.io/badge/Sistema-de-Gestão-Laravel-10-v1.0.0-blue) ![Badge](https://img.shields.io/badge/npm-v16.0.0-blue)
-
 ---
 
 Índice
 ================
 
-- [Sistema de Gestão - Laravel 10](#-sistema-de-gestão)
 - [Índice](#índice)
     - [Pré-requisitos](#pré-requisitos)
     - [🎲 Rodando o Back End](#-rodando-o-back-end)
