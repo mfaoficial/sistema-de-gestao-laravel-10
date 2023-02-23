@@ -36,28 +36,26 @@ Além disto é bom ter um editor para trabalhar com o código como [VSCode](http
 
 ```bash
 # Clone este repositório
-$ git clone https://github.com/agenciabrasildigital/Alrisha
+$ git clone https://github.com/mfaoficial/sistema-de-gestao-laravel-10.git
 
 # Acesse a pasta do projeto no terminal/cmd
-$ cd Alrisha
+$ cd sistema-de-gestao-laravel-10
 
 # Adicione o .env
-$ Pegar arquivo .env com algum responsável pelo projeto
-$ Colar na raiz do projeto
+$ cp .env.example .env
+
+# Adicione a chave de acesso ao .env
+$ php artisan key:generate
 
 # Instale as dependências
 $ composer install
-$ npm install
 
 # Criando o DB
-$ Crie um banco de dados com o nome ```alrisha_db```
+$ Crie um banco de dados com o nome ```sistema-de-gestao-laravel-10```
 
 # Criando tabelas e alimentando o DB
-$ php spark migrate
-$ php spark db:seed BasicSeeder
-
-# Gerando Schema de Relações
-$ php spark schemas
+$ php artisan migrate
+$ php artisan db:seed
 
 # Login
 $ Peça a um de nossos desenvolvedores o login e senha para acessar.
