@@ -13,9 +13,40 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', [\App\Http\Controllers\PrincipalController::class, 'principal']);
-Route::get('/sobre-nos', [\App\Http\Controllers\SobreNosController::class, 'sobreNos']);
-Route::get('/contato', [\App\Http\Controllers\ContatoController::class, 'contato']);
+Route::get('/', [\App\Http\Controllers\PrincipalController::class, 'principal'])->name('site.index');
+Route::get('/sobre-nos', [\App\Http\Controllers\SobreNosController::class, 'sobreNos'])->name('site.sobreNos');
+Route::get('/contato', [\App\Http\Controllers\ContatoController::class, 'contato'])->name('site.contato');
+Route::get('/login', function ()
+{
+    return 'Login';
+})->name('site.login');
+
+// Agrupamento de rotas
+Route::prefix('/app')->group(function ()
+{
+    Route::get(
+        '/clientes',
+        function ()
+        {
+            return 'Clientes';
+        }
+    )->name('app.clientes');
+    Route::get(
+        '/fornecedores',
+        function ()
+        {
+            return 'Fornecedores';
+        }
+    )->name('app.fornecedores');
+    Route::get(
+        '/produtos',
+        function ()
+        {
+            return 'Produtos';
+        }
+    )->name('app.produtos');
+});
+
 
 // Forma de retornar uma função diretamente
 /* Route::get('/sobre-nos', function () {
@@ -23,7 +54,7 @@ Route::get('/contato', [\App\Http\Controllers\ContatoController::class, 'contato
 }); */
 
 // Modelo de como criar rota
-// Route::get($uri, $callback);
+// Route::get($uri, $callback(array apontando pro Controller::class e função, ou uma função diretamente));
 
 /* verbos http
 get
