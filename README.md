@@ -9,8 +9,7 @@
 Índice
 ================
 
-- [ALRISHA](#alrisha)
-  - [Projeto desenvolvido pela Agência Brasil Digital](#projeto-desenvolvido-pela-agência-brasil-digital)
+- [Sistema de Gestão - Laravel 10](#-sistema-de-gestão)
 - [Índice](#índice)
     - [Pré-requisitos](#pré-requisitos)
     - [🎲 Rodando o Back End](#-rodando-o-back-end)
