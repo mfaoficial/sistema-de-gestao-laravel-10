@@ -13,6 +13,23 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', [\App\Http\Controllers\PrincipalController::class, 'principal']);
+Route::get('/sobre-nos', [\App\Http\Controllers\SobreNosController::class, 'sobreNos']);
+Route::get('/contato', [\App\Http\Controllers\ContatoController::class, 'contato']);
+
+// Forma de retornar uma função diretamente
+/* Route::get('/sobre-nos', function () {
+    return 'Sobre-nós';
+}); */
+
+// Modelo de como criar rota
+// Route::get($uri, $callback);
+
+/* verbos http
+get
+post
+put
+patch
+delete
+options
+*/
