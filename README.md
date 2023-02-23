@@ -29,13 +29,13 @@
 ### Pré-requisitos
 
 Antes de começar, você vai precisar ter instalado em sua máquina as seguintes ferramentas:
-[Git](https://git-scm.com), [Composer](https://getcomposer.org/).
+[Git](https://git-scm.com), [Composer](https://getcomposer.org/), [Laragon](https://laragon.org/download/index.html) (é possível utilizar xamp, wamp e outros ambientes apache)
 Além disto é bom ter um editor para trabalhar com o código como [VSCode](https://code.visualstudio.com/)
 
 ### 🎲 Rodando o Back End
 
 ```bash
-# Clone este repositório
+# Clone este repositório em sua pasta www do laragon
 $ git clone https://github.com/mfaoficial/sistema-de-gestao-laravel-10.git
 
 # Acesse a pasta do projeto no terminal/cmd
@@ -43,6 +43,9 @@ $ cd sistema-de-gestao-laravel-10
 
 # Adicione o .env
 $ cp .env.example .env
+
+# Altere o .env
+$ modifique a linha que contem APP_URL para a URL da aplicação, caso utilize laragon será http://sistema-de-gestao-laravel-10.test (necessário reiniciar o laragon após o git clone)
 
 # Adicione a chave de acesso ao .env
 $ php artisan key:generate
@@ -58,7 +61,7 @@ $ php artisan migrate
 $ php artisan db:seed
 
 # Login
-$ Peça a um de nossos desenvolvedores o login e senha para acessar.
+$ Modifique a senha de acesso no arquivo app/database/seeders/UserSeeder
 ```
 
 ---
