@@ -79,7 +79,12 @@ As seguintes ferramentas foram usadas na construção do projeto:
 
 <table>
   <tr>
-    <td align="center"><a href="https://www.udemy.com/course/curso-completo-do-desenvolvedor-laravel"><br /><sub><b>Jorge Santana</b></sub></a><br /></td>
+    <td align="center">
+    <a href="https://github.com/mfaoficial">
+ <img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/56968366?v=4" width="100px;" alt=""/>
+ <br />
+ <sub><b>Matheus Aquino</b></sub></a>
+ <br /></td>
   </tr>
 </table>
 
@@ -87,8 +92,7 @@ As seguintes ferramentas foram usadas na construção do projeto:
 
 ### 🦸 Autor
 
-<a href="https://github.com/italofrade">
- <img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/49399080?s=64&v=4" width="100px;" alt=""/>
+<a href="https://www.udemy.com/course/curso-completo-do-desenvolvedor-laravel">
  <br />
  <sub><b>Jorge Santana</b></sub></a>
  <br />
