@@ -47,11 +47,22 @@ Route::prefix('/app')->group(function ()
     )->name('app.produtos');
 });
 
+// Redirecionamento de rotas
+// Route::redirect('/rota2', '/rota1');
+
+// Route::get('/rota1', function() {
+//     echo 'Rota 1';
+// })->name('site.rota1');
+
+// Route::get('/rota2', function() {
+//     echo 'Rota 2';
+// })->name('site.rota2');
 
 // Forma de retornar uma função diretamente
 /* Route::get('/sobre-nos', function () {
     return 'Sobre-nós';
 }); */
+
 
 // Modelo de como criar rota
 // Route::get($uri, $callback(array apontando pro Controller::class e função, ou uma função diretamente));
