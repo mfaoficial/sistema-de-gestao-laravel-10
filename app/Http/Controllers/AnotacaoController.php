@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class TreinoController extends Controller
+class AnotacaoController extends Controller
 {
     public function variaveis(int $p1, int $p2)
     {

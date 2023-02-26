@@ -48,7 +48,10 @@ Route::fallback(function ()
 });
 
 // Como passar parâmetros para uma rota
-// Route::get('/teste/{p1}/{p2}', [\App\Http\Controllers\TreinoController::class, 'variaveis'])->name('teste.variaveis');
+// Route::get('/teste/{p1}/{p2}', [\App\Http\Controllers\AnotacaoController::class, 'variaveis'])->name('anotacoes.variaveis');
+
+// Forma de escrever uma rota em laraveis antigos
+// Route::get('/rota', Controller@funcao)->name('app.rota');
 
 // Redirecionamento de rotas
 // Route::redirect('/rota2', '/rota1');
