@@ -3,6 +3,7 @@
 
 {{-- Fica o comentário que será descartado pelo interpretador blade --}}
 
+{{-- bloco de PHP puro --}}
 @php
     // Comentário de uma linha
     /*
