@@ -31,13 +31,7 @@ Route::prefix('/app')->group(function ()
             return 'Clientes';
         }
     )->name('app.clientes');
-    Route::get(
-        '/fornecedores',
-        function ()
-        {
-            return 'Fornecedores';
-        }
-    )->name('app.fornecedores');
+    Route::get('/fornecedores', [\App\Http\Controllers\FornecedorController::class, 'index'])->name('app.fornecedores');
     Route::get(
         '/produtos',
         function ()
@@ -54,7 +48,7 @@ Route::fallback(function ()
 });
 
 // Como passar parâmetros para uma rota
-// Route::get('/teste/{p1}/{p2}', [\App\Http\Controllers\TreinosController::class, 'variaveis'])->name('teste.variaveis');
+// Route::get('/teste/{p1}/{p2}', [\App\Http\Controllers\TreinoController::class, 'variaveis'])->name('teste.variaveis');
 
 // Redirecionamento de rotas
 // Route::redirect('/rota2', '/rota1');
