@@ -20,6 +20,7 @@
     <br>
     CNPJ: {{ $variavel[0]['cnpj'] ?? 'CNPJ não informado' }}
     <!--
+        irá imprimir CNPJ não informado caso:
         $variavel testada não estiver definida (isset)
         ou
         $variavel testada possuir o valor null
