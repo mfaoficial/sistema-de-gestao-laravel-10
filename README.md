@@ -9,8 +9,6 @@
 Índice
 ================
 
-- [ALRISHA](#alrisha)
-  - [Projeto desenvolvido pela Agência Brasil Digital](#projeto-desenvolvido-pela-agência-brasil-digital)
 - [Índice](#índice)
     - [Pré-requisitos](#pré-requisitos)
     - [🎲 Rodando o Back End](#-rodando-o-back-end)
