@@ -48,9 +48,13 @@ Route::prefix('/app')->group(function ()
 });
 
 // Rota de fallback caso tentem acessar qualquer rota que não existe
-Route::fallback(function() {
-    echo 'A rota acessada não existe. <a href="'.route('site.index').'">clique aqui</a> para voltar para a home';
+Route::fallback(function ()
+{
+    echo 'A rota acessada não existe. <a href="' . route('site.index') . '">clique aqui</a> para voltar para a home';
 });
+
+// Como passar parâmetros para uma rota
+Route::get('/teste/{p1}/{p2}', [\App\Http\Controllers\TesteController::class, 'teste'])->name('teste');
 
 // Redirecionamento de rotas
 // Route::redirect('/rota2', '/rota1');
