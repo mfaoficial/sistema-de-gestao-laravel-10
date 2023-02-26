@@ -113,7 +113,7 @@
             .conteudo-destaque {
                 width: 100%;
                 height: 100%;
-                min-height: 800px; 
+                min-height: 800px;
             }
 
             .esquerda {
@@ -208,7 +208,7 @@
             <div class="menu">
                 <ul>
                     <li><a href="{{ route('site.index') }}">Principal</a></li>
-                    <li><a href="{{ route('site.sobrenos') }}">Sobre Nós</a></li>
+                    <li><a href="{{ route('site.sobreNos') }}">Sobre Nós</a></li>
                     <li><a href="{{ route('site.contato') }}">Contato</a></li>
                 </ul>
             </div>
@@ -222,7 +222,7 @@
             <div class="informacao-pagina">
                 <p>O Super Gestão é o sistema online de controle administrativo que pode transformar e potencializar os negócios da sua empresa.</p>
                 <p>Desenvolvido com a mais alta tecnologia para você cuidar do que é mais importante, seus negócios!</p>
-            </div>  
+            </div>
         </div>
 
         <div class="rodape">
