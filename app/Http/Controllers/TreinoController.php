@@ -41,8 +41,32 @@ class TreinoController extends Controller
         echo $msg;
     }
 
-    public function condicionalDeValorDefault()
+    public function switchCase()
     {
-        
+        $variavel = [
+            0 => [
+                'nome'   => 'Fornecedor 1',
+                'status' => 'S',
+                'cnpj'   => '00.000.000/0001-00',
+                'ddd' => '11', // São Paulo (SP)
+                'telefone' => '0000-00000'
+            ],
+            1 => [
+                'nome'   => 'Fornecedor 2',
+                'status' => 'N',
+                'cnpj' => null,
+                'ddd' => '53', // Fortaleza (CE)
+                'telefone' => '0000-00000'
+            ],
+            2 => [
+                'nome'   => 'Fornecedor 3',
+                'status' => 'S',
+                'cnpj' => null,
+                'ddd' => '32', // Juiz de Fora (MG)
+                'telefone' => '0000-00000'
+            ],
+        ];
+
+        return view('anotacoes.switch_case', compact('variavel'));
     }
 }

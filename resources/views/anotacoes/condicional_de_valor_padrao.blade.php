@@ -1,18 +1,3 @@
-@php
-    /*
-        if(empty($variavel)) {} // retornar true se a variável estiver vazia
-        valores que são considerados vazios
-        - ''
-        - 0
-        - 0.0
-        - '0'
-        - null
-        - false
-        - array()
-        - $var
-    */
-@endphp
-
 @isset($variavel)
     Fornecedor: {{ $variavel[0]['nome'] }}
     <br>
