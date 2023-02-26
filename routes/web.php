@@ -47,6 +47,11 @@ Route::prefix('/app')->group(function ()
     )->name('app.produtos');
 });
 
+// Rota de fallback caso tentem acessar qualquer rota que não existe
+Route::fallback(function() {
+    echo 'A rota acessada não existe. <a href="'.route('site.index').'">clique aqui</a> para voltar para a home';
+});
+
 // Redirecionamento de rotas
 // Route::redirect('/rota2', '/rota1');
 

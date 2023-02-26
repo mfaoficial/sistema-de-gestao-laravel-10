@@ -5,6 +5,7 @@
 Índice
 ================
 
+- [Sistema de Gestão - Laravel 10](#sistema-de-gestão---laravel-10)
 - [Índice](#índice)
     - [Pré-requisitos](#pré-requisitos)
     - [🎲 Rodando o Back End](#-rodando-o-back-end)
@@ -15,7 +16,7 @@
 ---
 
 <h4 align="center">
- 🚧  Sistema de Gestão - Feito em Laravel 10, adaptado do curso de Laravel 7 do Jorge Santana 🚀 Em construção...  🚧
+ 🚧  Sistema de Gestão - Feito em Laravel 10, adaptado do curso de Laravel 7 do Jorge Santana 🚀 Em construção... - O projeto contém comentários relacionados ao curso 🚧
 </h4>
 
 ---
@@ -66,7 +67,9 @@ As seguintes ferramentas foram usadas na construção do projeto:
 
 - [Laravel 10.0](https://laravel.com/docs/10.x)
 - [PHP 8.1.9](https://www.php.net/)
+- [MariaDB 10.8.3](https://mariadb.com/kb/en/mariadb-1083-release-notes/)
 - [Composer](https://getcomposer.org/)
+- [Laragon](https://laragon.org/download/index.html)
 
 ---
 
