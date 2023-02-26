@@ -1,8 +1,4 @@
-# ALRISHA
-
-## Projeto desenvolvido pela Agência Brasil Digital
-
-![Badge](https://img.shields.io/badge/Alrisha-v1.0.0-blue) ![Badge](https://img.shields.io/badge/npm-v16.0.0-blue)
+# Sistema de Gestão - Laravel 10
 
 ---
 
